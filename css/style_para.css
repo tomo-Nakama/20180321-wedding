@@ -89,7 +89,7 @@ button:focus {
   outline-offset: -2px;
 }
 
-.wedding .topview {
+.wedding .l-topview {
   background-color: #ffefff;
   text-align: center;
   height: 100vh;
@@ -108,24 +108,47 @@ button:focus {
   justify-content: center;
 }
 
-.wedding .topview .cherry {
+.wedding .l-topview .cherry {
   width: 67px;
 }
 
-.wedding .topview .animetion {
+.wedding .l-topview .animetion {
   fill: none;
   stroke-dasharray: 3000;
   stroke-dashoffset: 3000;
-  -webkit-animation: DASH 4s ease-in 1s forwards;
-  animation: DASH 4s ease-in 1s forwards;
 }
 
-.wedding .topview .animetion02 {
+.wedding .l-topview .animetion02 {
   fill: none;
   stroke-dasharray: 3000;
   stroke-dashoffset: 3000;
   -webkit-animation: DASH02 10s ease-in 0s forwards;
   animation: DASH02 10s ease-in 0s forwards;
+}
+
+.wedding .l-topview .petal-01 {
+  -webkit-animation: petal02 1.2s ease-in .3s forwards;
+  animation: petal02 1.2s ease-in .3s forwards;
+}
+
+.wedding .l-topview .petal-02 {
+  -webkit-animation: petal02 1.2s ease-in .5s forwards;
+  animation: petal02 1.2s ease-in .5s forwards;
+}
+
+.wedding .l-topview .petal-03 {
+  -webkit-animation: petal02 1.2s ease-in .7s forwards;
+  animation: petal02 1.2s ease-in .7s forwards;
+}
+
+.wedding .l-topview .petal-04 {
+  -webkit-animation: petal02 1.2s ease-in .9s forwards;
+  animation: petal02 1.2s ease-in .9s forwards;
+}
+
+.wedding .l-topview .petal-05 {
+  -webkit-animation: petal02 1.2s ease-in 1.1s forwards;
+  animation: petal02 1.2s ease-in 1.1s forwards;
 }
 
 @-webkit-keyframes DASH {
@@ -148,6 +171,44 @@ button:focus {
 }
 
 @keyframes DASH {
+  0% {
+    stroke-dashoffset: 3000;
+    fill: rgba(231, 145, 187, 0);
+  }
+  50% {
+    stroke-dashoffset: 2000;
+    fill: rgba(231, 145, 187, 0.2);
+  }
+  70% {
+    stroke-dashoffset: 1000;
+    fill: rgba(231, 145, 187, 0.4);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #e791bb;
+  }
+}
+
+@-webkit-keyframes petal02 {
+  0% {
+    stroke-dashoffset: 3000;
+    fill: rgba(231, 145, 187, 0);
+  }
+  50% {
+    stroke-dashoffset: 2000;
+    fill: rgba(231, 145, 187, 0.2);
+  }
+  70% {
+    stroke-dashoffset: 1000;
+    fill: rgba(231, 145, 187, 0.4);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #e791bb;
+  }
+}
+
+@keyframes petal02 {
   0% {
     stroke-dashoffset: 3000;
     fill: rgba(231, 145, 187, 0);
@@ -204,16 +265,15 @@ button:focus {
   }
 }
 
-.wedding .topview .welcome {
+.wedding .l-topview .welcome {
   font-size: 1rem;
 }
 
-.wedding .topview .welcome span {
+.wedding .l-topview .welcome span {
   color: #aaa;
 }
 
 .wedding .intro {
-  padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,12 +281,6 @@ button:focus {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .wedding .intro_ttl {
@@ -246,6 +300,352 @@ button:focus {
 
 .wedding .intro_cmtTxt {
   margin-bottom: 30px;
+}
+
+.l-topNews {
+  position: relative;
+  width: 100%;
+}
+
+.l-topNews__inner {
+  position: relative;
+  z-index: 2;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding-left: 8.3333333333%;
+}
+
+.l-topNews__inner_l,
+.l-topNews__inner_r {
+  position: relative;
+  z-index: 2;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.l-topNews__inner_l {
+  width: 45.454545454545455%;
+  padding: 0 5%;
+}
+
+.l-topNews__inner_r {
+  width: 54.545454545454545%;
+}
+
+.l-topNews__inner_button {
+  position: absolute;
+  z-index: 3;
+  left: 8.3333333333%;
+  padding-left: 4.1666666667%;
+  bottom: 0;
+  display: block;
+}
+
+.l-topNews__inner_button a {
+  width: 100%;
+}
+
+.l-topNews__inner {
+  display: block;
+  table-layout: inherit;
+  padding-bottom: 60px;
+  padding-left: 0;
+}
+
+.l-topNews__inner_l,
+.l-topNews__inner_r {
+  display: block;
+}
+
+.l-topNews__inner_l {
+  width: auto;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 60px;
+  padding: 0 0 0 30px;
+}
+
+.l-topNews__inner_r {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.l-topNews__inner_button {
+  position: absolute;
+  left: auto;
+  right: -1px;
+  bottom: 0;
+}
+
+.m-leftBorder {
+  position: relative;
+  width: 2px;
+  height: 100%;
+}
+
+.l-topHeading__bdr {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.l-topHeading__subtitle {
+  padding-bottom: 30px;
+  font-family: "cerabasic-bold", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+.l-topHeading__subtitle {
+  padding-bottom: 15px;
+  font-family: "cerabasic-bold", sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  font-size: 8px !important;
+  font-size: 0.8rem !important;
+  -webkit-transform-origin: 0px 0px;
+  -ms-transform-origin: 0px 0px;
+  transform-origin: 0px 0px;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.m-verticalTitle {
+  font-family: "alternate-gothic-ef-notwo", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.m-verticalTitle {
+  font-family: "alternate-gothic-ef-notwo", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.js-verticalTitle span {
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: all 0.4s cubic-bezier(0, 0.7, 0, 1);
+  -o-transition: all 0.4s cubic-bezier(0, 0.7, 0, 1);
+  transition: all 0.4s cubic-bezier(0, 0.7, 0, 1);
+}
+
+.js-verticalTitle span:nth-child(odd) {
+  -webkit-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  transform: translateY(-100px);
+}
+
+.js-verticalTitle span:nth-child(even) {
+  -webkit-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  transform: translateY(100px);
+}
+
+.js-verticalTitle.is-vertical0 span:nth-child(odd) {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.js-verticalTitle.is-vertical0 span:nth-child(even) {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.js-verticalTitle span.space {
+  width: 20px;
+}
+
+.js-verticalTitle.is-space10 span.space {
+  width: 10px;
+}
+
+.js-verticalTitle.is-space20 span.space {
+  width: 20px;
+}
+
+.js-verticalTitle.is-space30 span.space {
+  width: 30px;
+}
+
+.js-verticalTitle.is-space40 span.space {
+  width: 40px;
+}
+
+.js-verticalTitle span.is-active {
+  opacity: 1;
+}
+
+.js-verticalTitle span.is-active:nth-child(odd) {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.js-verticalTitle span.is-active:nth-child(even) {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+@media (max-width: 59.99em) {
+  .js-verticalTitle span.space {
+    width: 10px;
+  }
+  .js-verticalTitle.is-space10 span.space {
+    width: 5px;
+  }
+  .js-verticalTitle.is-space20 span.space {
+    width: 10px;
+  }
+  .js-verticalTitle.is-space30 span.space {
+    width: 15px;
+  }
+  .js-verticalTitle.is-space40 span.space {
+    width: 20px;
+  }
+}
+
+.m-leftBorder:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+}
+
+.m-leftBorder:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  background-color: #e791bb;
+  width: 100%;
+  height: 14px;
+}
+
+.l-schedule_cnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.l-schedule_time:not(:last-of-type), .l-schedule_txt:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.l-schedule_time {
+  line-height: 1;
+  border-radius: 2rem;
+  background-color: #ccc;
+  width: 3rem;
+  height: 3rem;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.l-schedule_time:not(:last-of-type):before {
+  content: '';
+  width: 2px;
+  height: 30px;
+  background-color: #ccc;
+  display: inline-block;
+  position: absolute;
+  left: calc(50% - 2px);
+  top: 3rem;
+}
+
+.l-schedule_txt {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-preferred-size: calc(100% - 3rem - 10px);
+  flex-basis: calc(100% - 3rem - 10px);
+  text-align: right;
+  font-size: 1rem;
+}
+
+.wedding .l-nav {
+  position: fixed;
+  right: 15px;
+  top: 0;
+  height: 100vh;
+  -webkit-transform: translate3d(100px, 0, 0);
+  transform: translate3d(100px, 0, 0);
+  -webkit-animation: nav-insert .5S ease-in 3s forwards;
+  animation: nav-insert .5S ease-in 3s forwards;
+}
+
+.wedding .l-nav_elem {
+  padding: 10px 0;
+}
+
+@-webkit-keyframes nav-insert {
+  0% {
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+  50% {
+    stroke-dashoffset: 2000;
+    fill: rgba(231, 145, 187, 0.2);
+  }
+  70% {
+    stroke-dashoffset: 1000;
+    fill: rgba(231, 145, 187, 0.4);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes nav-insert {
+  0% {
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+  50% {
+    stroke-dashoffset: 2000;
+    fill: rgba(231, 145, 187, 0.2);
+  }
+  70% {
+    stroke-dashoffset: 1000;
+    fill: rgba(231, 145, 187, 0.4);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .wedding .scrollBtn {

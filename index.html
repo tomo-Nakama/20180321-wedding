@@ -12,14 +12,65 @@
 
 <body>
 
-  <div class="wedding">
+  <article class="wedding">
+    <nav class="l-nav">
+      <ul class="l-nav_inner">
+        <li class="l-nav_elem">
+          <a data-scroll href="#intro"
+             class="l-nav_link">intro</a>
+        </li>
+        <li class="l-nav_elem">
+          <a data-scroll
+             href="#schedule"
+             class="l-nav_link">schedule</a>
+        </li>
+        <li class="l-nav_elem">
+          <a data-scroll
+             href="#menu"
+             class="l-nav_link">menu</a>
+        </li>
+        <li class="l-nav_elem">
+          <a data-scroll
+             href="#meshi"
+             class="l-nav_link">meshi</a>
+        </li>
+        <li class="l-nav_elem">
+          <a data-scroll
+             href="#bgm"
+             class="l-nav_link">bgm</a>
+        </li>
+      </ul>
+    </nav>
 
     <main class="hatsukoi__right col-xs-12 col-sm-6 col-md-6 col-lg-6">
 
-      <section class="topview">
-        <svg xmlns="http://www.w3.org/2000/svg"
-             viewBox="0 0 46.57 45.57"
-             class="cherry">
+      <section class="l-topview">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.57 46.57" class="cherry">
+          <defs>
+            <style>.cls-1{fill:#e791bb;stroke:#dd8cb3;stroke-miterlimit:10;}</style>
+          </defs>
+          <title>アセット 3</title>
+          <g id="レイヤー_2" data-name="レイヤー 2">
+            <g id="レイヤー_1-2" data-name="レイヤー 1">
+              <path class="animetion petal-05"
+              stroke="#e791bb"
+              stroke-width="1" d="M44.92,30.94c-1.87,1.12-4.85,3.92-9.4,1.52s-7.38-5.95-9.8-10.64c4.94-2.05,7.8-3.51,14.42-1.86,5.15,1.29,6,7,5.93,8a26.23,26.23,0,0,1-4,.21Z"/>
+              <path class="animetion petal-04"
+              stroke="#e791bb"
+              stroke-width="1" d="M1.62,30.81c1.86,1.15,4.81,4,9.38,1.64s7.45-5.85,9.93-10.51c-4.92-2.11-7.77-3.61-14.4-2-5.16,1.22-6.06,6.91-6,8a26,26,0,0,0,4,.26Z"/>
+              <path class="animetion petal-03"
+              stroke="#e791bb"
+              stroke-width="1" d="M25.27,45.73c1.63-1.5,5.11-3.56,4.4-8.84s-3-9.23-6.48-13.13c-3.44,4.25-5.68,6.62-6.31,13.71-.49,5.52,4.41,8.16,5.37,8.46a30.91,30.91,0,0,0,1.45-3.86Z"/>
+              <path class="animetion petal-02"
+              stroke="#e791bb"
+              stroke-width="1" d="M7.55,2.83C7.08,5,5.42,8.84,9,12.68s7.62,5.61,12.61,6.63c.4-5.55.89-8.85-2.59-15C16.28-.43,10.83.45,9.89.79a30.3,30.3,0,0,0,1,4Z"/>
+              <path class="animetion petal-01"
+              stroke="#e791bb"
+              stroke-width="1" d="M39.11,2.88c.45,2.22,2.06,6.05-1.52,9.84S29.9,18.23,24.9,19.19c-.34-5.55-.78-8.86,2.76-14.93C30.42-.48,35.86.46,36.79.82a29.26,29.26,0,0,1-1,4Z"/>
+            </g>
+          </g>
+        </svg>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.57 45.57" class="cherry">
           <defs>
             <style>.cls-1{fill:#e791bb;stroke:#dd8cb3;stroke-miterlimit:10;}</style>
           </defs>
@@ -36,7 +87,7 @@
               <path class="animetion" d="M39.78,3c.45,2.21,2.06,6-1.52,9.83s-7.68,5.51-12.69,6.47c-.33-5.55-.78-8.85,2.76-14.93C31.09-.39,36.53.55,37.47.91a31.2,31.2,0,0,1-1,4Z"/>
             </g>
           </g>
-        </svg>
+        </svg> -->
 
         <h2 class="welcome">
           <span>W</span>
@@ -59,10 +110,18 @@
           <span>!</span>
         </h2>
       </section>
-      <section class="intro">
-        <h3 class="intro_ttl">
-          新郎新婦からご挨拶
-        </h3>
+      <section class="intro" id="intro" data-scroll-id="intro">
+        <div class="l-topNews__inner_l">
+          <div class="l-topHeading">
+            <div class="l-topHeading__bdr m-leftBorder"></div>
+            <h3 class="l-topHeading__subtitle">message</h3>
+            <h2 class="m-verticalTitle js-verticalTitle">
+              <span class="is-active">ご</span>
+              <span class="is-active">挨</span>
+              <span class="is-active">拶</span>
+            </h2>
+          </div>
+        </div>
         <p class="intro_message">
           サイト作ってみましたサイト作ってみましたサイト作ってみましたサイト作ってみましたサイト作ってみましたサイト作ってみましたサイト作ってみましたサイト作ってみました
         </p>
@@ -77,25 +136,80 @@
           </li>
         </ul>
       </section>
-      <section class="scadule">
-        <h3 class="wedding-ttl scadule_ttl">
-          スケジュール
-        </h3>
-        <dl>
-          <dt>9:00</dt>
-          <dt>受付開始</dt>
-          <dt>挙式開式</dt>
-          <dt></dt>
-          <dt></dt>
-          <dt></dt>
+
+      <section class="l-schedule" id="schedule" data-scroll-id="schedule">
+        <div class="l-topNews__inner_l">
+          <div class="l-topHeading">
+            <div class="l-topHeading__bdr m-leftBorder"></div>
+            <h3 class="l-topHeading__subtitle">schedule</h3>
+            <h2 class="m-verticalTitle js-verticalTitle">
+              <span class="is-active">ス</span>
+              <span class="is-active">ケ</span>
+              <span class="is-active">ジ</span>
+              <span class="is-active">ュ</span>
+              <span class="is-active">ー</span>
+              <span class="is-active">ル</span>
+            </h2>
+          </div>
+        </div>
+        <dl class="l-schedule_cnt">
+          <dt class="l-schedule_time">9:00</dt>
+          <dd class="l-schedule_txt">受付開始</dd>
+          <dt class="l-schedule_time">10:00</dt>
+          <dd class="l-schedule_txt">挙式開式</dd>
+          <dt class="l-schedule_time">10:20</dt>
+          <dd class="l-schedule_txt">挙式閉式</dd>
+          <dt class="l-schedule_time">11:00</dt>
+          <dd class="l-schedule_txt">ウェディングパーティ開始</dd>
+          <dt class="l-schedule_time">13:30</dt>
+          <dd class="l-schedule_txt">閉式</dd>
+          <dt class="l-schedule_time">and<br>more...?</dt>
+          <dd class="l-schedule_txt">(お誘いあれば伺います)</dd>
         </dl>
+      </section>
+      <section class="l-menu" id="menu" data-scroll-id="menu">
+        menu dt
+      </section>
+      <section class="l-meshi is-nonOpen"
+               id="meshi" data-scroll-id="meshi">
+        meshilan
+        <div>We Are Open 13:30〜</div>
+        <dl class="l-meshi_lists">
+          <dt class="l-meshi_categoryTtl"></dt>
+          <dd class="l-meshi_cnt"></dd>
+          <dt class="l-meshi_categoryTtl"></dt>
+          <dd class="l-meshi_cnt"></dd>
+          <dt class="l-meshi_categoryTtl"></dt>
+          <dd class="l-meshi_cnt"></dd>
+          <dt class="l-meshi_categoryTtl"></dt>
+          <dd class="l-meshi_cnt"></dd>
+          <dt class="l-meshi_categoryTtl"></dt>
+          <dd class="l-meshi_cnt"></dd>
+          <dt class="l-meshi_categoryTtl"></dt>
+          <dd class="l-meshi_cnt"></dd>
+        </dl>
+      </section>
+      <section class="l-bgm"
+               id="bgm" data-scroll-id="bgm">
+        bgm We Are Open 13:30〜
+      </section>
+      <section class="l-thanks"
+               id="thanks" data-scroll-id="thanks">
+        thanks
+        <dl class="l-thanks_lists">
+          <dt class="l-thanks_ttl">Special Thanks To</dt>
+          <dd class="l-thanks_cnt"></dd>
+        </dl>
+      </section>
+      <section class="l-copy">
+        <copyright>(C) ONLY 2018.03.21 T&Y Compnay limited...</copyright>
       </section>
       <div class="scrollBtn" id="js-scroll">
         <span class="scrollBtn_arrow">scroll</span>
         <span class="scrollBtn_arrow"></span>
       </div>
     </main>
-  </div>
+  </article>
 
   <!-- /.以下js -->
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
@@ -104,7 +218,12 @@
   <script src="https://cdn.jsdelivr.net/kute.js/1.6.2/kute.min.js"></script>
 
   <!-- /.パララックスの場合 -->
-  <!-- <script src="js/ScrollMagic.js"></script> -->
+  <script src="js/lib/jquery.3.3.1.js"></script>
+  <script src="js/lib/smooth-scroll.min.js"></script>
+
+  <script>
+    const scroll = new SmoothScroll('a[href*="#"]');
+  </script>
 
   <!-- <script type="text/javascript" src="js/TweenMax.min.js"></script>
 <script type="text/javascript" src="js/plugins/animation.gsap.js"></script>
