@@ -270,6 +270,7 @@ button:focus {
 
 .wedding .l-topview .welcome {
   font-size: 1rem;
+  width: 100%;
 }
 
 .wedding .l-topview .welcome span {
@@ -334,14 +335,64 @@ button:focus {
   text-align: justify;
   width: 95%;
   margin-bottom: 30px;
+  font-size: 12px;
+  -webkit-transform: translate3d(0, 30px, 0);
+  transform: translate3d(0, 30px, 0);
+  opacity: 0;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+}
+
+.wedding .message_message.js-show {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .wedding .message_cmtTtl {
-  font-size: .8rem;
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  padding-left: 1.5em;
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 10px;
+}
+
+.wedding .message_cmtTtl:before, .wedding .message_cmtTtl:after {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-color: #e891bc;
+  margin-right: 10px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.wedding .message_cmtTtl:after {
+  background-color: #ffe7f3;
+  width: 5px;
+  height: 5px;
+  top: 10px;
+  left: 7px;
 }
 
 .wedding .message_cmtTxt {
+  -webkit-transform: translate3d(0, 30px, 0);
+  transform: translate3d(0, 30px, 0);
+  opacity: 0;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
   margin-bottom: 30px;
+}
+
+.wedding .message_cmtTxt.js-show {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .l-topNews {
@@ -590,6 +641,21 @@ button:focus {
   align-items: center;
 }
 
+.l-schedule_time, .l-schedule_txt {
+  -webkit-transform: translate3d(0, 30px, 0);
+  transform: translate3d(0, 30px, 0);
+  opacity: 0;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+}
+
+.l-schedule_time.js-show, .l-schedule_txt.js-show {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
 .l-schedule_time:not(:last-of-type), .l-schedule_txt:not(:last-of-type) {
   margin-bottom: 30px;
 }
@@ -597,7 +663,7 @@ button:focus {
 .l-schedule_time {
   line-height: 1;
   border-radius: 2rem;
-  background-color: #ccc;
+  background-color: #e791bb;
   width: 3rem;
   height: 3rem;
   color: #fff;
@@ -618,7 +684,7 @@ button:focus {
   content: '';
   width: 2px;
   height: 30px;
-  background-color: #ccc;
+  background-color: #e791bb;
   display: inline-block;
   position: absolute;
   left: calc(50% - 2px);
@@ -635,6 +701,128 @@ button:focus {
   font-size: .7rem;
 }
 
+.wedding .l-meshi {
+  height: auto;
+}
+
+.wedding .l-meshi.js-hide .l-menu_cnt {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.wedding .l-meshi_categoryTtl {
+  font-size: 15px;
+  width: 100vw;
+  padding: 5px 15px;
+  margin-left: -30px;
+  position: relative;
+  font-weight: bold;
+  background-color: #ddd;
+}
+
+.wedding .l-meshi_categoryTtl.is-show:before {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.wedding .l-meshi_categoryTtl:before, .wedding .l-meshi_categoryTtl:after {
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background-color: #333;
+  position: absolute;
+  right: 20px;
+  top: calc(50% - 5px);
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.wedding .l-meshi_categoryTtl:before {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.wedding .l-meshi_categoryTtl:after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.wedding .l-meshi_categoryTtl:not(:last-of-type) {
+  border-bottom: 1px solid #ddd;
+}
+
+.wedding .l-meshi_cnt {
+  margin-bottom: 30px;
+  padding-top: 30px;
+  -webkit-transform: translate3d(0, 30px, 0);
+  transform: translate3d(0, 30px, 0);
+  opacity: 0;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+}
+
+.wedding .l-meshi_cnt.js-show {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.wedding .l-meshi_store-name {
+  font-size: 14px;
+  margin-bottom: 10px;
+  position: relative;
+  height: 2em;
+}
+
+.wedding .l-meshi_store-name span {
+  position: absolute;
+}
+
+.wedding .l-meshi_store-name span:nth-child(1) {
+  z-index: 2;
+  left: 0;
+  top: 0;
+}
+
+.wedding .l-meshi_store-name span:nth-child(2) {
+  top: -2px;
+  left: 3px;
+  font-size: 25px;
+  color: #dfdfdf;
+  position: absolute;
+  font-family: 'Poiret One', cursive;
+  z-index: 1;
+}
+
+.wedding .l-meshi_store-detail:not(:last-child) {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 20px;
+}
+
+.wedding .l-meshi_store-detail span {
+  font-size: 13px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.wedding .l-meshi_store-detail p {
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.wedding .l-meshi_store-detail a {
+  color: blue;
+  text-decoration: underline;
+  margin-right: 1em;
+}
+
 .wedding .l-menu_eng {
   font-family: 'Dancing Script', cursive;
   font-size: 11px;
@@ -648,6 +836,21 @@ button:focus {
   flex-wrap: wrap;
   width: 100vw;
   margin-left: -30px;
+}
+
+.wedding .l-menu_cnt li {
+  -webkit-transform: translate3d(0, 30px, 0);
+  transform: translate3d(0, 30px, 0);
+  opacity: 0;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.wedding .l-menu_cnt li.js-show {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .wedding .l-menu_cnt > * {
@@ -672,14 +875,47 @@ button:focus {
 
 .wedding .l-bgm {
   height: auto;
+  position: relative;
 }
 
-.wedding .l-bgm.is-hide .l-bgm_lists {
+.wedding .l-bgm.is-hide .l-bgm_sttl {
   -webkit-filter: blur(10px);
   filter: blur(10px);
-  height: 10px;
-  visibility: hidden;
-  display: none;
+}
+
+.wedding .l-bgm.is-hide .l-bgm_lists:after {
+  content: 'We Are Open 14:00-';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-filter: none;
+  filter: none;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.wedding .l-bgm.is-hide .l-bgm_elem {
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.wedding .l-bgmhide {
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 107px;
+  background-color: #fff;
 }
 
 .wedding .l-bgm_lists {
@@ -690,6 +926,7 @@ button:focus {
   flex-wrap: wrap;
   width: auto;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .wedding .l-bgm_sttl {
@@ -768,7 +1005,8 @@ button:focus {
 
 .wedding .l-thanks {
   height: auto;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .wedding .l-nav {
@@ -1040,390 +1278,8 @@ main section:not(:first-child):last-of-type:before {
   display: none;
 }
 
-.hatsukoi__ttl {
-  background: url("../img/ttl.svg") calc(50% + (33px / 2)) 50%/216px no-repeat;
-  width: 280px;
-  height: 276px;
-  margin: 0 auto;
-  position: absolute;
-  top: calc(50% - (276px / 2));
-  left: calc(50% - (280px / 2));
-  z-index: 999;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border: 8px solid #fff;
-}
-
-.hatsukoi__ttl img {
-  width: 37px;
-  height: 36.5px;
-  position: relative;
-  top: 10px;
-  -webkit-animation: heart 1s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
-  animation: heart 1s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
-}
-
-@-webkit-keyframes heart {
-  0% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-  30% {
-    -webkit-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9);
-  }
-  100% {
-    -webkit-transform: scale(1.1, 1.1);
-    transform: scale(1.1, 1.1);
-  }
-}
-
-@keyframes heart {
-  0% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-  30% {
-    -webkit-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9);
-  }
-  100% {
-    -webkit-transform: scale(1.1, 1.1);
-    transform: scale(1.1, 1.1);
-  }
-}
-
-.hatsukoi__cnt {
-  width: 100%;
-}
-
-.hatsukoi__cnt--fst.is-absoluteBefore {
-  top: 0;
-}
-
-.hatsukoi__cnt--fst.is-absolute {
-  top: calc(100vh * 2);
-}
-
-.hatsukoi__cnt--fst > div {
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  top: -50px;
-  width: 50%;
-  min-width: 300px;
-}
-
-.hatsukoi__cnt--fst div > svg {
-  width: 67px;
-}
-
-.hatsukoi__cnt--fst div > img {
-  width: 67px;
-}
-
-.hatsukoi__cnt--fst .animetion {
-  fill: none;
-  stroke-dasharray: 3000;
-  stroke-dashoffset: 3000;
-  -webkit-animation: DASH 4s ease-in 1s forwards;
-  animation: DASH 4s ease-in 1s forwards;
-}
-
-.hatsukoi__cnt--fst .animetion02 {
-  fill: none;
-  stroke-dasharray: 3000;
-  stroke-dashoffset: 3000;
-  -webkit-animation: DASH02 10s ease-in 0s forwards;
-  animation: DASH02 10s ease-in 0s forwards;
-}
-
-@keyframes DASH {
-  0% {
-    stroke-dashoffset: 3000;
-    fill: rgba(231, 145, 187, 0);
-  }
-  50% {
-    stroke-dashoffset: 2000;
-    fill: rgba(231, 145, 187, 0.2);
-  }
-  70% {
-    stroke-dashoffset: 1000;
-    fill: rgba(231, 145, 187, 0.4);
-  }
-  100% {
-    stroke-dashoffset: 0;
-    fill: #e791bb;
-  }
-}
-
-@keyframes DASH02 {
-  0% {
-    stroke-dashoffset: 3000;
-    fill: transparent;
-  }
-  50% {
-    stroke-dashoffset: 2000;
-    fill: rgba(0, 0, 0, 0.2);
-  }
-  70% {
-    stroke-dashoffset: 1000;
-    fill: rgba(0, 0, 0, 0.4);
-  }
-  100% {
-    stroke-dashoffset: 0;
-    fill: black;
-  }
-}
-
-@-webkit-keyframes catch01 {
-  0% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 100%;
-    -webkit-filter: blur(10px);
-    filter: blur(10px);
-    -webkit-transform: translate3d(2, 2, 2);
-    transform: translate3d(2, 2, 2);
-  }
-  70% {
-    background-color: #fff;
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
-    opacity: 0.5;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-    opacity: 1;
-    background-color: #fff;
-    border-radius: 10px;
-    -webkit-filter: blur(0);
-    filter: blur(0);
-  }
-}
-
-@keyframes catch01 {
-  0% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 100%;
-    -webkit-filter: blur(10px);
-    filter: blur(10px);
-    -webkit-transform: translate3d(2, 2, 2);
-    transform: translate3d(2, 2, 2);
-  }
-  70% {
-    background-color: #fff;
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
-    opacity: 0.5;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-    opacity: 1;
-    background-color: #fff;
-    border-radius: 10px;
-    -webkit-filter: blur(0);
-    filter: blur(0);
-  }
-}
-
-@-webkit-keyframes catch02 {
-  0% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes catch02 {
-  0% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes catch03 {
-  0% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes catch03 {
-  0% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
-.hatsukoi__cnt--fst h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.hatsukoi__cnt--fst h2 span {
-  opacity: 1;
-}
-
-.hatsukoi__cnt--fst h2 span:nth-child(1) {
-  width: 21px;
-}
-
-.hatsukoi__cnt--fst h2 span:nth-child(2) {
-  width: 20px;
-}
-
-.hatsukoi__cnt--fst h2 span:nth-child(3) {
-  width: 15px;
-}
-
-.hatsukoi__cnt--fst h2 span:nth-child(4) {
-  width: 19px;
-}
-
-.hatsukoi__cnt--fst h2 span:nth-child(5) {
-  width: 16px;
-}
-
-.hatsukoi__cnt--fst h2 span:nth-child(6) {
-  width: 16.693px;
-}
-
-.hatsukoi__cnt--fst h2 span:nth-child(7) {
-  width: 6.5px;
-  position: relative;
-  top: 9px;
-}
-
-.hatsukoi__cnt--fst h2 span:nth-child(8) {
-  width: 15.003px;
-}
-
-.hatsukoi__cnt--fst h2 span:nth-child(9) {
-  width: 10.53px;
-}
-
-.hatsukoi__cnt--fst h2 span:nth-child(10) {
-  width: 14.274px;
-}
-
-.hatsukoi__cnt--fst h2 span:nth-child(11) {
-  width: 16.25px;
-}
-
-.hatsukoi__cnt--fst h2 span:nth-child(12) {
-  width: 17.161px;
-}
-
-.hatsukoi__cnt--fst h2 span:nth-child(13) {
-  width: 7.15px;
-  -webkit-animation: catch03 2s cubic-bezier(0.385, 0.065, 0.525, 1) 2s forwards;
-  animation: catch03 2s cubic-bezier(0.385, 0.065, 0.525, 1) 2s forwards;
-}
-
-.hatsukoi__cnt--snd {
-  position: relative;
-  -webkit-transform: translateX(-150px);
-  -ms-transform: translateX(-150px);
-  transform: translateX(-150px);
-}
-
-.hatsukoi__cnt--snd.is-absoluteBefore {
-  top: calc(100vh * 2);
-}
-
-.hatsukoi__cnt--snd.is-absolute {
-  top: calc(100vh * 2);
-}
-
-.hatsukoi__cnt--thd {
-  background-color: #ccc;
-  -webkit-transform: translateX(600px);
-  -ms-transform: translateX(600px);
-  transform: translateX(600px);
-}
-
-.hatsukoi__cnt--four {
-  background-color: #fff;
-}
-
-.hatsukoi__cnt--fifth {
-  background-color: #ccc;
-  opacity: 0;
-}
-
-.hatsukoi__cnt.is-fixed {
-  position: fixed;
-  top: 0;
-  width: calc(50% - 30px);
-}
-
-@media (max-width: 576px) {
-  .hatsukoi__cnt.is-fixed {
-    width: calc(100% - 30px);
-  }
-}
-
-.hatsukoi__form {
-  width: 100%;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.9);
-  -webkit-box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.9);
-  box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.9);
-  margin: 15px 0;
-  padding: 30px;
-}
-
-.hatsukoi .spacer:not([id]) {
-  min-height: 300px;
-}
-
-footer {
-  text-align: center;
-  margin: 0 auto;
+.is-transiton-show {
+  -webkit-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  transition: all 1s ease-in;
 }
