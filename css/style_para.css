@@ -283,19 +283,11 @@ button:focus {
   margin-right: .5em;
 }
 
-.wedding .l-topview .welcome span:nth-child(odd) {
-  -webkit-transform: translate3d(0, 100px, 0);
-  transform: translate3d(0, 100px, 0);
-}
-
-.wedding .l-topview .welcome span:nth-child(even) {
-  -webkit-transform: translate3d(0, -100px, 0);
-  transform: translate3d(0, -100px, 0);
-}
-
 @-webkit-keyframes welecom-anime {
   0% {
-    opacity: 0;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 300px, 0);
+    transform: translate3d(0, 300px, 0);
   }
   100% {
     opacity: 1;
@@ -306,7 +298,9 @@ button:focus {
 
 @keyframes welecom-anime {
   0% {
-    opacity: 0;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 300px, 0);
+    transform: translate3d(0, 300px, 0);
   }
   100% {
     opacity: 1;
