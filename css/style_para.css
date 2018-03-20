@@ -109,22 +109,11 @@ button:focus {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
   padding-top: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  opacity: 0;
-  -webkit-transition: all 2s;
-  -o-transition: all 2s;
-  transition: all 2s;
-}
-
-.wedding .l-topview.js-show {
-  opacity: 1;
-  -webkit-transform: translate3d(0, -50px, 0);
-  transform: translate3d(0, -50px, 0);
 }
 
 .wedding .l-topview .cherry {
   width: 67px;
+  margin-top: -50px;
 }
 
 .wedding .l-topview .animetion {
@@ -283,6 +272,7 @@ button:focus {
 .wedding .l-topview .welcome {
   font-size: 1rem;
   width: 100%;
+  margin-top: -50px;
 }
 
 .wedding .l-topview .welcome span {
