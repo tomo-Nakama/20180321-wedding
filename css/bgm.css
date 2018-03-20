@@ -1,0 +1,29 @@
+.wedding .l-menu_cnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin-left: -30px;
+}
+
+.wedding .l-menu_cnt > * {
+  height: calc((100vh - 167px) / 6);
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.wedding .l-menu_cnt > *:nth-child(1), .wedding .l-menu_cnt > *:nth-child(4), .wedding .l-menu_cnt > *:nth-child(5), .wedding .l-menu_cnt > *:nth-child(8), .wedding .l-menu_cnt > *:nth-child(9), .wedding .l-menu_cnt > *:nth-child(12) {
+  background-color: #afc6ca63;
+}

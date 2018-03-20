@@ -106,6 +106,8 @@ button:focus {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
 }
 
 .wedding .l-topview .cherry {
@@ -127,28 +129,28 @@ button:focus {
 }
 
 .wedding .l-topview .petal-01 {
-  -webkit-animation: petal02 1.2s ease-in .3s forwards;
-  animation: petal02 1.2s ease-in .3s forwards;
+  -webkit-animation: petal02 1.5s ease-in .3s forwards;
+  animation: petal02 1.5s ease-in .3s forwards;
 }
 
 .wedding .l-topview .petal-02 {
-  -webkit-animation: petal02 1.2s ease-in .5s forwards;
-  animation: petal02 1.2s ease-in .5s forwards;
+  -webkit-animation: petal02 1.25s ease-in .5s forwards;
+  animation: petal02 1.25s ease-in .5s forwards;
 }
 
 .wedding .l-topview .petal-03 {
-  -webkit-animation: petal02 1.2s ease-in .7s forwards;
-  animation: petal02 1.2s ease-in .7s forwards;
+  -webkit-animation: petal02 1.5s ease-in .7s forwards;
+  animation: petal02 1.5s ease-in .7s forwards;
 }
 
 .wedding .l-topview .petal-04 {
-  -webkit-animation: petal02 1.2s ease-in .9s forwards;
-  animation: petal02 1.2s ease-in .9s forwards;
+  -webkit-animation: petal02 1.5s ease-in .9s forwards;
+  animation: petal02 1.5s ease-in .9s forwards;
 }
 
 .wedding .l-topview .petal-05 {
-  -webkit-animation: petal02 1.2s ease-in 1.1s forwards;
-  animation: petal02 1.2s ease-in 1.1s forwards;
+  -webkit-animation: petal02 1.5s ease-in 1.1s forwards;
+  animation: petal02 1.5s ease-in 1.1s forwards;
 }
 
 @-webkit-keyframes DASH {
@@ -270,10 +272,48 @@ button:focus {
 }
 
 .wedding .l-topview .welcome span {
-  color: #aaa;
+  color: #888;
+  -webkit-animation: welecom-anime 3s ease-in 0s forwards;
+  animation: welecom-anime 3s ease-in 0s forwards;
 }
 
-.wedding .intro {
+.wedding .l-topview .welcome span:nth-of-type(7), .wedding .l-topview .welcome span:nth-of-type(9) {
+  margin-right: .5em;
+}
+
+.wedding .l-topview .welcome span:nth-child(odd) {
+  -webkit-transform: translate3d(0, 100px, 0);
+  transform: translate3d(0, 100px, 0);
+}
+
+.wedding .l-topview .welcome span:nth-child(even) {
+  -webkit-transform: translate3d(0, -100px, 0);
+  transform: translate3d(0, -100px, 0);
+}
+
+@-webkit-keyframes welecom-anime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes welecom-anime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.wedding .message {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,22 +323,22 @@ button:focus {
   flex-direction: column;
 }
 
-.wedding .intro_ttl {
+.wedding .message_ttl {
   font-size: 1.1rem;
   margin-bottom: 5px;
 }
 
-.wedding .intro_message {
+.wedding .message_message {
   text-align: justify;
   width: 95%;
   margin-bottom: 30px;
 }
 
-.wedding .intro_cmtTtl {
+.wedding .message_cmtTtl {
   font-size: .8rem;
 }
 
-.wedding .intro_cmtTxt {
+.wedding .message_cmtTxt {
   margin-bottom: 30px;
 }
 
@@ -360,9 +400,7 @@ button:focus {
 
 .l-topNews__inner_l {
   width: auto;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   padding: 0 0 0 30px;
 }
 
@@ -592,22 +630,162 @@ button:focus {
   -ms-flex-preferred-size: calc(100% - 3rem - 10px);
   flex-basis: calc(100% - 3rem - 10px);
   text-align: right;
-  font-size: 1rem;
+  font-size: .7rem;
+}
+
+.wedding .l-menu_eng {
+  font-family: 'Dancing Script', cursive;
+  font-size: 11px;
+}
+
+.wedding .l-menu_cnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin-left: -30px;
+}
+
+.wedding .l-menu_cnt > * {
+  height: calc((100vh - 147px) / 6);
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.wedding .l-menu_cnt > *:nth-child(1), .wedding .l-menu_cnt > *:nth-child(4), .wedding .l-menu_cnt > *:nth-child(5), .wedding .l-menu_cnt > *:nth-child(8), .wedding .l-menu_cnt > *:nth-child(9), .wedding .l-menu_cnt > *:nth-child(12) {
+  background-color: #afc6ca36;
+}
+
+.wedding .l-bgm {
+  height: auto;
+}
+
+.wedding .l-bgm.is-hide .l-bgm_lists {
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+  height: 10px;
+  visibility: hidden;
+  display: none;
+}
+
+.wedding .l-bgm_lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: auto;
+  margin-bottom: 30px;
+}
+
+.wedding .l-bgm_sttl {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 1.5em;
+}
+
+.wedding .l-bgm_sttl:before, .wedding .l-bgm_sttl:after {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-color: #e891bc;
+  margin-right: 10px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.wedding .l-bgm_sttl:after {
+  background-color: #ffe7f3;
+  width: 5px;
+  height: 5px;
+  top: 10px;
+  left: 7px;
+}
+
+.wedding .l-bgm_elem {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wedding .l-bgm_elem-ttl {
+  font-weight: bold;
+}
+
+.wedding .l-bgm_elem-ttl:nth-of-type(4) {
+  font-weight: bold;
+  font-size: 9px;
+}
+
+.wedding .l-bgm_elem > span {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.wedding .l-bgm_elem > span:nth-of-type(1) {
+  display: none;
+}
+
+.wedding .l-bgm_elem > span:nth-of-type(4) {
+  font-size: 12px;
+}
+
+.wedding .l-bgm_elem:nth-child(odd) {
+  background-color: #efefef54;
+}
+
+.wedding .l-thanks {
+  height: auto;
+  padding-bottom: 50px;
 }
 
 .wedding .l-nav {
   position: fixed;
-  right: 15px;
+  right: 0;
   top: 0;
   height: 100vh;
-  -webkit-transform: translate3d(100px, 0, 0);
-  transform: translate3d(100px, 0, 0);
-  -webkit-animation: nav-insert .5S ease-in 3s forwards;
-  animation: nav-insert .5S ease-in 3s forwards;
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.wedding .l-nav.is-hide {
+  opacity: 0;
 }
 
 .wedding .l-nav_elem {
-  padding: 10px 0;
+  padding: 10px 15px 10px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 @-webkit-keyframes nav-insert {
@@ -650,8 +828,8 @@ button:focus {
 
 .wedding .scrollBtn {
   background-color: #e791bb;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -666,14 +844,39 @@ button:focus {
   position: fixed;
   bottom: 0;
   left: calc(50% - 25px);
+  z-index: 2;
   cursor: pointer;
   -webkit-transition: opacity;
   -o-transition: opacity;
   transition: opacity;
+  -webkit-animation: scroll-insert 3.5s ease-in 0s forwards;
+  animation: scroll-insert 3.5s ease-in 0s forwards;
 }
 
-.wedding .scrollBtn:hover {
-  opacity: 0.2s;
+@-webkit-keyframes scroll-insert {
+  0% {
+    -webkit-filter: blur(100px);
+    filter: blur(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scroll-insert {
+  0% {
+    -webkit-filter: blur(100px);
+    filter: blur(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
 }
 
 .wedding .scrollBtn_arrow:after, .wedding .scrollBtn_arrow:before {
@@ -765,7 +968,7 @@ button:focus {
 }
 
 .wedding .scrollBtn_arrow:before {
-  height: 15px;
+  height: 10px;
 }
 
 .wedding .scrollBtn_arrow:after {
@@ -802,36 +1005,16 @@ body {
   background-color: #fff;
   padding: 0;
   margin: 0;
+  color: #555;
 }
 
 main section {
+  padding: 50px 30px 0;
   height: 100vh;
 }
 
-.hatsukoi__left {
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-}
-
-@media (max-width: 576px) {
-  .hatsukoi__left {
-    position: relative;
-    height: 100vh;
-  }
-}
-
-.hatsukoi__background {
-  background: url("../img/ttl_bg.png") no-repeat 50% 50%/cover;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-  -webkit-filter: sepia(100%);
-  filter: sepia(100%);
+main section:nth-of-type(odd) {
+  background-color: #efefef3d;
 }
 
 .hatsukoi__ttl {

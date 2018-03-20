@@ -8,16 +8,18 @@
   <title>20180321</title>
   <link rel="stylesheet" href="css/style_para.css">
   <meta name=”robots” content=”noindex” />
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
 </head>
 
 <body>
 
   <article class="wedding">
-    <nav class="l-nav">
+    <nav class="l-nav" id="js-nav">
       <ul class="l-nav_inner">
         <li class="l-nav_elem">
           <a data-scroll href="#intro"
-             class="l-nav_link">intro</a>
+             class="l-nav_link">message</a>
         </li>
         <li class="l-nav_elem">
           <a data-scroll
@@ -32,7 +34,7 @@
         <li class="l-nav_elem">
           <a data-scroll
              href="#meshi"
-             class="l-nav_link">meshi</a>
+             class="l-nav_link">meshilan</a>
         </li>
         <li class="l-nav_elem">
           <a data-scroll
@@ -42,9 +44,10 @@
       </ul>
     </nav>
 
-    <main class="hatsukoi__right col-xs-12 col-sm-6 col-md-6 col-lg-6">
+    <main>
 
       <section class="l-topview">
+        <div id="tree"></div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.57 46.57" class="cherry">
           <defs>
             <style>.cls-1{fill:#e791bb;stroke:#dd8cb3;stroke-miterlimit:10;}</style>
@@ -55,10 +58,10 @@
               <path class="animetion petal-05"
               stroke="#e791bb"
               stroke-width="1" d="M44.92,30.94c-1.87,1.12-4.85,3.92-9.4,1.52s-7.38-5.95-9.8-10.64c4.94-2.05,7.8-3.51,14.42-1.86,5.15,1.29,6,7,5.93,8a26.23,26.23,0,0,1-4,.21Z"/>
-              <path class="animetion petal-04"
+              <path class="animetion petal-03"
               stroke="#e791bb"
               stroke-width="1" d="M1.62,30.81c1.86,1.15,4.81,4,9.38,1.64s7.45-5.85,9.93-10.51c-4.92-2.11-7.77-3.61-14.4-2-5.16,1.22-6.06,6.91-6,8a26,26,0,0,0,4,.26Z"/>
-              <path class="animetion petal-03"
+              <path class="animetion petal-04"
               stroke="#e791bb"
               stroke-width="1" d="M25.27,45.73c1.63-1.5,5.11-3.56,4.4-8.84s-3-9.23-6.48-13.13c-3.44,4.25-5.68,6.62-6.31,13.71-.49,5.52,4.41,8.16,5.37,8.46a30.91,30.91,0,0,0,1.45-3.86Z"/>
               <path class="animetion petal-02"
@@ -110,7 +113,7 @@
           <span>!</span>
         </h2>
       </section>
-      <section class="intro" id="intro" data-scroll-id="intro">
+      <section class="message" id="intro" data-scroll-id="intro">
         <div class="l-topNews__inner_l">
           <div class="l-topHeading">
             <div class="l-topHeading__bdr m-leftBorder"></div>
@@ -122,17 +125,18 @@
             </h2>
           </div>
         </div>
-        <p class="intro_message">
-          サイト作ってみましたサイト作ってみましたサイト作ってみましたサイト作ってみましたサイト作ってみましたサイト作ってみましたサイト作ってみましたサイト作ってみました
+        <p class="message_message">
+          自分たちが結婚式をするにあたってせっかくだから何かコンテンツを作りたいと思って、サクッとサイトを作ってみました。<br>
+          寒い一日にはなりそうですが、みなさんの暖かい気持ちの一助になれば幸いです。
         </p>
-        <ul class="intro_cmt">
+        <ul class="message_cmt">
           <li>
-            <h4 class="intro_cmtTtl">新郎</h4>
-            <p class="intro_cmtTxt">新郎からの挨拶新郎からの挨拶新郎からの挨拶新郎からの挨拶新郎からの挨拶新郎からの挨拶</p>
+            <h4 class="message_cmtTtl">新郎</h4>
+            <p class="message_cmtTxt">新郎からの挨拶新郎からの挨拶新郎からの挨拶新郎からの挨拶新郎からの挨拶新郎からの挨拶</p>
           </li>
           <li>
-            <h4 class="intro_cmtTtl">新婦</h4>
-            <p class="intro_cmtTxt">新婦からの挨拶新婦からの挨拶新婦からの挨拶新婦からの挨拶新婦からの挨拶新婦からの挨拶新婦からの挨拶新婦からの挨拶新婦からの挨拶</p>
+            <h4 class="message_cmtTtl">新婦</h4>
+            <p class="message_cmtTxt">新婦からの挨拶新婦からの挨拶新婦からの挨拶新婦からの挨拶新婦からの挨拶新婦からの挨拶新婦からの挨拶新婦からの挨拶新婦からの挨拶</p>
           </li>
         </ul>
       </section>
@@ -167,8 +171,66 @@
           <dd class="l-schedule_txt">(お誘いあれば伺います)</dd>
         </dl>
       </section>
-      <section class="l-menu" id="menu" data-scroll-id="menu">
-        menu dt
+      <section class="l-menu"
+               id="menu"
+               data-scroll-id="menu">
+        <div class="l-topNews__inner_l">
+          <div class="l-topHeading">
+            <div class="l-topHeading__bdr m-leftBorder"></div>
+            <h3 class="l-topHeading__subtitle">Menu</h3>
+            <h2 class="m-verticalTitle js-verticalTitle">
+              <span class="is-active">メ</span>
+              <span class="is-active">ニ</span>
+              <span class="is-active">ュ</span>
+              <span class="is-active">ー</span>
+            </h2>
+          </div>
+        </div>
+        <ul class="l-menu_cnt">
+          <li class="l-menu_eng l-fxl">
+            Saumon marine deux cauleus<br>
+            de legumes et fromage
+          </li>
+          <li class="l-menu_jp l-fxr">
+            タスマニア産サーモンのマリネ<br>
+            2色の野菜とフロマージュ
+          </li>
+          <li class="l-menu_jp">
+            じゃがいものポタージュ
+          </li>
+          <li class="l-menu_eng">
+            Potage de legumes saisons
+          </li>
+          <li class="l-menu_eng">
+            Superme de poisson au beurre<br>
+            de chorizo er salade lentille
+          </li>
+          <li class="l-menu_jp">
+            チョリソの香りを纏わせた旬魚<br>
+            レンズ豆のサラダとハーブオイル
+          </li>
+          <li class="l-menu_jp">
+            仔羊鞍下のローストに<br>
+            レモンとバジルのアクセント<br>
+            仔羊フィレのキャノン添え
+          </li>
+          <li class="l-menu_eng">
+            Selled agneau roti parfum<br>
+            des herbes et citron
+          </li>
+          <li class="l-menu_eng">
+            Gateau Mariage
+          </li>
+          <li class="l-menu_jp">
+            ウェディングケーキ
+          </li>
+          <li class="l-menu_jp">
+            コーヒー又は紅茶
+          </li>
+          <li class="l-menu_eng">
+            Cafe ou The
+          </li>
+        </ul>
       </section>
       <section class="l-meshi is-nonOpen"
                id="meshi" data-scroll-id="meshi">
@@ -189,20 +251,202 @@
           <dd class="l-meshi_cnt"></dd>
         </dl>
       </section>
-      <section class="l-bgm"
+      <section class="l-bgm is-hide"
                id="bgm" data-scroll-id="bgm">
-        bgm We Are Open 13:30〜
+        <div class="l-topNews__inner_l">
+          <div class="l-topHeading">
+            <div class="l-topHeading__bdr m-leftBorder"></div>
+            <h3 class="l-topHeading__subtitle">Bgm</h3>
+            <h2 class="m-verticalTitle js-verticalTitle">
+              <span class="is-active">劇</span>
+              <span class="is-active">伴</span>
+            </h2>
+          </div>
+        </div>
+        <h4 class="l-bgm_sttl">
+          挙式
+        </h4>
+        <ul class="l-bgm_lists">
+          <li class="l-bgm_elem">
+            <span>カウボーイビバップ サントラ1</span>
+            <span>SEATBELTS</span>
+            <span>Tank!</span>
+          </li>
+          <li class="l-bgm_elem">
+            <span>恋</span>
+            <span>星野源</span>
+            <span>恋</span></li>
+          <li class="l-bgm_elem">
+            <span>mihimaruGT 10th anniversary BEST 2003-2013</span>
+            <span>mihimaruGT</span>
+            <span>ツヨクツヨク</span></li>
+        </ul>
+        <h4 class="l-bgm_sttl">
+          入場
+        </h4>
+        <ul class="l-bgm_lists">
+          <li class="l-bgm_elem">
+            <span>かぜよみ</span>
+            <span>坂本真綾</span>
+            <span>Get No satisfaction</span></li>
+        </ul>
+        <h4 class="l-bgm_sttl">
+          乾杯
+        </h4>
+        <ul class="l-bgm_lists">
+          <li class="l-bgm_elem">
+            <span>MISIAの森</span>
+            <span>MISIA</span>
+            <span>Can't take my eyes off you</span>
+          </li>
+        </ul>
+        <h4 class="l-bgm_sttl">
+          ケーキ入刀
+        </h4>
+        <ul class="l-bgm_lists">
+          <li class="l-bgm_elem">
+            <span>THE IDOLM@STER CINDERELLA GIRLS ANIMATION PROJECT 00 ST@RTER BEST</span>
+            <span>島村卯月（大橋彩香）</span>
+            <span>S(mile)ING!</span></li>
+          </ul>
+          <h4 class="l-bgm_sttl">
+            ファーストバイト
+          </h4>
+        <ul class="l-bgm_lists">
+          <li class="l-bgm_elem">
+            <span>What a pastaful world!</span>
+            <span>鷲崎健</span>
+            <span>What a pastaful world</span></li>
+          </ul>
+          <h4 class="l-bgm_sttl">
+            新婦中座
+          </h4>
+        <ul class="l-bgm_lists">
+          <li class="l-bgm_elem">
+            <span>PRHYSHM</span>
+            <span>angela</span>
+            <span>peace of mind</span></li>
+        </ul>
+        <h4 class="l-bgm_sttl">
+          新郎中座
+        </h4>
+        <ul class="l-bgm_lists">
+          <li class="l-bgm_elem">
+            <span>ULTRA FIRE!!</span>
+            <span>Fire Bomber</span>
+            <span>Angel Voice</span>
+          </li>
+        </ul>
+        <h4 class="l-bgm_sttl">
+          お色直し入場
+        </h4>
+        <ul class="l-bgm_lists">
+          <li class="l-bgm_elem">
+            <span>お色直し入場</span>
+            <span>Wind Climbing～風にあそばれて～</span>
+            <span>奥井亜紀</span>
+            <span>Wind Climbing～風にあそばれて～</span></li>
+          </ul>
+          <h4 class="l-bgm_sttl">
+            テーブルラウンド
+          </h4>
+        <ul class="l-bgm_lists">
+          <li class="l-bgm_elem">
+            <span>jupiter</span>
+            <span>BUMP OF CHICKEN</span>
+            <span>stage of the ground</span></li>
+          <li class="l-bgm_elem">
+            <span>BELOVED</span>
+            <span>GLAY</span>
+            <span>春を愛する人</span></li>
+          <li class="l-bgm_elem">
+            <span>TURN BACK</span>
+            <span>the pillows</span>
+            <span>Tiny Boat</span></li>
+          <li class="l-bgm_elem">
+            <span>ENSON2</span>
+            <span> 遠藤正明</span>
+            <span>鳥の詩</span></li>
+          <li class="l-bgm_elem">
+            <span>GATES OF HEAVEN</span>
+            <span>Do As Infinity</span>
+            <span>本日ハ晴天ナリ</span></li>
+          <li class="l-bgm_elem">
+            <span>JUST MUSIC</span>
+            <span>Band of Royal Netherland Air Force</span>
+            <span>The 7th Night of July</span></li>
+          </ul>
+          <h4 class="l-bgm_sttl">
+            手紙
+          </h4>
+        <ul class="l-bgm_lists">
+          <li class="l-bgm_elem">
+            <span>-</span>
+            <span>越路吹雪</span>
+            <span>愛の讃歌</span></li>
+          </ul>
+          <h4 class="l-bgm_sttl">
+            記念品贈呈
+          </h4>
+        <ul class="l-bgm_lists">
+          <li class="l-bgm_elem">
+            <span>Fantôme</span>
+            <span>宇多田ヒカル</span>
+            <span>花束を君に</span></li>
+        </ul>
+          <h4 class="l-bgm_sttl">
+            記念品贈呈
+          </h4>
+        <ul class="l-bgm_lists">
+          <li class="l-bgm_elem">
+            <span>両家退場</span>
+            <span>花の名</span>
+            <span>BUMP OF CHICKEN</span>
+            <span>花の名</span></li>
+        </ul>
+          <h4 class="l-bgm_sttl">
+            送賓
+          </h4>
+        <ul class="l-bgm_lists">
+          <li class="l-bgm_elem">
+            <span>-</span>
+            <span>μ's</span>
+            <span>愛してるばんざーい</span></li>
+          <li class="l-bgm_elem">
+            <span>Fine colorday</span>
+            <span>林原めぐみ</span>
+            <span>Fine colorday</span></li>
+          <li class="l-bgm_elem">
+            <span>YELLOW DANCER</span>
+            <span>星野源</span>
+            <span>Friend ship</span></li>
+          <li class="l-bgm_elem">
+            <span>初音ミク　Thank you 1826　Days</span>
+            <span>malo feat.初音ミク</span>
+            <span>ハジメテノオト</span></li>
+          <li class="l-bgm_elem">
+            <span>
+              坂本真綾 15周年記念ベストアルバム<br>
+              everywhere DISC2</span>
+            <span>坂本真綾</span>
+            <span>ポケットを空にして</span></li>
+        </ul>
       </section>
       <section class="l-thanks"
                id="thanks" data-scroll-id="thanks">
         thanks
         <dl class="l-thanks_lists">
-          <dt class="l-thanks_ttl">Special Thanks To</dt>
-          <dd class="l-thanks_cnt"></dd>
+          <dt class="l-thanks_ttl">Special Thanks</dt>
+          <dd class="l-thanks_cnt">
+            <ul>
+              <li>
+                本日はご列席くださり、ありがとうございました。<br>
+                どうぞ気をつけておかえりくださいませ。
+            </li>
+            </ul>
+          </dd>
+          <copyright>(C) ONLY 2018.03.21 T&Y Compnay limited...</copyright>
         </dl>
-      </section>
-      <section class="l-copy">
-        <copyright>(C) ONLY 2018.03.21 T&Y Compnay limited...</copyright>
       </section>
       <div class="scrollBtn" id="js-scroll">
         <span class="scrollBtn_arrow">scroll</span>
@@ -220,6 +464,8 @@
   <!-- /.パララックスの場合 -->
   <script src="js/lib/jquery.3.3.1.js"></script>
   <script src="js/lib/smooth-scroll.min.js"></script>
+  <!-- <script src="js/tree.js"></script> -->
+  <script src="js/tags.js"></script>
 
   <script>
     const scroll = new SmoothScroll('a[href*="#"]');
