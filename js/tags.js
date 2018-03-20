@@ -50,12 +50,13 @@ $(window).on('scroll', function() {
   nowPositionY = $(window).scrollTop();
   if (diffPositionY > 0) {
     console.log('up', nowPositionY);
-    $('#js-nav').removeClass('is-hide')
+    if (nowPositionY > 667) {
+        $('#js-nav').removeClass('is-hide')
+    }
   } else {
     $('#js-nav').addClass('is-hide')
     // console.log('down', nowPositionY);
     if (parseInt(diffPositionY) > parseInt(windowHeight)) {
-      console.log('aa');
     }
   }
 });
@@ -75,5 +76,4 @@ document.addEventListener("DOMContentLoaded", function() {
   if (date >= 21 && hours >= 14) {
     $('.l-bgm').removeClass('is-hide')
   }
-  showStore()
 }, false);
