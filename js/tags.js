@@ -12,7 +12,7 @@ function addShow() {
     if (!$el.is('.js-show')) {
       const y = $el.offset().top;
       const oy = windowTop + windowHeight;
-      if (y < oy) {
+      if (y < (oy - 100)) {
         $el.addClass('js-show');
       }
     }
