@@ -108,6 +108,7 @@ button:focus {
   justify-content: center;
   font-family: 'Lato', sans-serif;
   font-weight: 900;
+  padding-top: 0;
 }
 
 .wedding .l-topview .cherry {
@@ -321,6 +322,7 @@ button:focus {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  font-size: 110%;
 }
 
 .wedding .message_ttl {
@@ -777,6 +779,7 @@ button:focus {
   -webkit-transition: opacity .5s;
   -o-transition: opacity .5s;
   transition: opacity .5s;
+  z-index: 5;
 }
 
 .wedding .l-nav.is-hide {
@@ -1011,10 +1014,30 @@ body {
 main section {
   padding: 50px 30px 0;
   height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 main section:nth-of-type(odd) {
   background-color: #efefef3d;
+}
+
+main section:not(:first-child):before {
+  content: '';
+  background-color: #fffde5;
+  width: 120vw;
+  height: 200px;
+  display: inline-block;
+  position: absolute;
+  left: -50px;
+  top: -150px;
+  -webkit-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+main section:not(:first-child):last-of-type:before {
+  display: none;
 }
 
 .hatsukoi__ttl {

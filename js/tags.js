@@ -31,9 +31,9 @@ $(window).on('scroll', function() {
   nowPositionY = $(window).scrollTop();
   if (diffPositionY > 0) {
     console.log('up', nowPositionY);
-    $('#js-nav').removeClass('is-hide')
-  } else {
     $('#js-nav').addClass('is-hide')
+  } else {
+    $('#js-nav').removeClass('is-hide')
     // console.log('down', nowPositionY);
     if (parseInt(diffPositionY) > parseInt(windowHeight)) {
       console.log('aa');
