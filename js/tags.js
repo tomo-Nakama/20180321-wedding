@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const minutes = dt.getMinutes();
   const seconds = dt.getSeconds();
   console.log(date, hours, minutes);
-  if (date >= 21 && hours >= 14) {
-    $('.l-bgm').removeClass('is-hide')
-  }
+  // if (date >= 21 && hours >= 14) {
+  //   $('.l-bgm').removeClass('is-hide')
+  // }
 }, false);
