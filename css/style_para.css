@@ -648,7 +648,7 @@ button:focus {
 }
 
 .l-schedule_time:not(:last-of-type), .l-schedule_txt:not(:last-of-type) {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .l-schedule_time {
@@ -674,7 +674,7 @@ button:focus {
 .l-schedule_time:not(:last-of-type):before {
   content: '';
   width: 2px;
-  height: 60px;
+  height: 40px;
   background-color: #e791bb;
   display: inline-block;
   position: absolute;
@@ -689,7 +689,7 @@ button:focus {
   -ms-flex-preferred-size: calc(100% - 3rem - 10px);
   flex-basis: calc(100% - 3rem - 10px);
   text-align: right;
-  font-size: .7rem;
+  font-size: 1rem;
 }
 
 .wedding .l-meshi {
