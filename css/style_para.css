@@ -838,13 +838,14 @@ button:focus {
 }
 
 .wedding .l-meshi_store-detail span {
-  font-size: 13px;
+  font-size: 16px;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  line-height: 1.5;
 }
 
 .wedding .l-meshi_store-detail p {
-  font-size: 11px;
+  font-size: 13px;
   margin-bottom: 5px;
 }
 
