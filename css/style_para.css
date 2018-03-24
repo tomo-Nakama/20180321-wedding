@@ -280,10 +280,6 @@ button:focus {
   animation: welecom-anime 3s ease-in 0s forwards;
 }
 
-.wedding .l-topview .welcome span:nth-of-type(7), .wedding .l-topview .welcome span:nth-of-type(9) {
-  margin-right: .5em;
-}
-
 @-webkit-keyframes welecom-anime {
   0% {
     opacity: 1;
@@ -652,7 +648,7 @@ button:focus {
 }
 
 .l-schedule_time:not(:last-of-type), .l-schedule_txt:not(:last-of-type) {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .l-schedule_time {
@@ -678,7 +674,7 @@ button:focus {
 .l-schedule_time:not(:last-of-type):before {
   content: '';
   width: 2px;
-  height: 30px;
+  height: 60px;
   background-color: #e791bb;
   display: inline-block;
   position: absolute;
@@ -701,6 +697,44 @@ button:focus {
 }
 
 .wedding .l-meshi.js-hide .l-menu_cnt {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.wedding .l-meshi h4 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.wedding .l-meshi_intro {
+  margin-bottom: 20px;
+  -webkit-transform: translate3d(0, 30px, 0);
+  transform: translate3d(0, 30px, 0);
+  opacity: 0;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.wedding .l-meshi_intro.js-show {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.wedding .l-meshi_txt {
+  margin-bottom: 50px;
+  -webkit-transform: translate3d(0, 30px, 0);
+  transform: translate3d(0, 30px, 0);
+  opacity: 0;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.wedding .l-meshi_txt.js-show {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -783,13 +817,15 @@ button:focus {
   z-index: 2;
   left: 0;
   top: 0;
+  font-weight: bold;
 }
 
 .wedding .l-meshi_store-name span:nth-child(2) {
+  opacity: .5;
+  color: #e791bb;
   top: -2px;
   left: 3px;
   font-size: 25px;
-  color: #dfdfdf;
   position: absolute;
   font-family: 'Poiret One', cursive;
   z-index: 1;
@@ -954,9 +990,6 @@ button:focus {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   padding: 10px;
   width: 100%;
   -ms-flex-wrap: wrap;
@@ -964,6 +997,9 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .wedding .l-bgm_elem-ttl {
@@ -976,32 +1012,45 @@ button:focus {
 }
 
 .wedding .l-bgm_elem > span {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  line-height: 1;
 }
 
 .wedding .l-bgm_elem > span:nth-of-type(1) {
   display: none;
 }
 
-.wedding .l-bgm_elem > span:nth-of-type(4) {
-  font-size: 12px;
+.wedding .l-bgm_elem > span:nth-of-type(2) {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.wedding .l-bgm_elem:nth-child(odd) {
+.wedding .l-bgm_elem > span:nth-of-type(3) {
+  font-size: 10px;
+}
+
+.wedding .l-bgm_elem p {
+  margin-top: 10px;
   background-color: #efefef54;
+  padding: 10px;
+  width: 100%;
 }
 
 .wedding .l-thanks {
   height: auto;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.wedding .l-thanks_cnt {
+  line-height: 2.4;
+  font-size: 13px;
+  padding-bottom: 100px;
 }
 
 .wedding .l-nav {
