@@ -40,7 +40,7 @@ $(window).on('scroll', function() {
 
     console.log(nowPositionY)
     $('#js-nav').addClass('is-hide')
-    if (nowPositionY > thanksposi) {
+    if (nowPositionY > (thanksposi - 500)) {
       $('#js-scroll').addClass('is-hide')
     }
     // console.log('down', nowPositionY);
