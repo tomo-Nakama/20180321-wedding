@@ -51,10 +51,19 @@ $(window).on('scroll', function() {
   if (diffPositionY > 0) {
     console.log('up', nowPositionY);
     if (nowPositionY > 667) {
-        $('#js-nav').removeClass('is-hide')
+      $('#js-nav').removeClass('is-hide')
+    } else if (0 < nowPositionY < 667) {
+      $('#js-nav').addClass('is-hide')
     }
+    $('#js-scroll').removeClass('is-hide')
+
   } else {
+
+    console.log(nowPositionY)
     $('#js-nav').addClass('is-hide')
+    if (nowPositionY > 21500) {
+      $('#js-scroll').addClass('is-hide')
+    }
     // console.log('down', nowPositionY);
     if (parseInt(diffPositionY) > parseInt(windowHeight)) {
     }

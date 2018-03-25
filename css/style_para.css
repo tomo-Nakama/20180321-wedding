@@ -1059,13 +1059,18 @@ button:focus {
   right: 0;
   top: 0;
   height: 100vh;
-  -webkit-transition: opacity .5s;
-  -o-transition: opacity .5s;
-  transition: opacity .5s;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
   z-index: 5;
+  opacity: 1;
 }
 
 .wedding .l-nav.is-hide {
+  -webkit-transform: translate3d(100px, 0, 0);
+  transform: translate3d(100px, 0, 0);
   opacity: 0;
 }
 
@@ -1132,11 +1137,17 @@ button:focus {
   left: calc(50% - 25px);
   z-index: 2;
   cursor: pointer;
-  -webkit-transition: opacity;
-  -o-transition: opacity;
-  transition: opacity;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
   -webkit-animation: scroll-insert 3.5s ease-in 0s forwards;
   animation: scroll-insert 3.5s ease-in 0s forwards;
+}
+
+.wedding .scrollBtn.is-hide {
+  -webkit-transform: translateY(45px);
+  -ms-transform: translateY(45px);
+  transform: translateY(45px);
 }
 
 @-webkit-keyframes scroll-insert {
