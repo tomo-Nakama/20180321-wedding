@@ -2,8 +2,10 @@
 
 // 開いたときのwindowの高さを取得
 const windowHeight = $(window).innerHeight();
+const thanksposi = $('#thanks').position().top;
 const windowWidth = $(window).width();
 console.log(windowHeight);
+console.log(thanksposi);
 
 function addShow() {
   let windowTop = $(window).scrollTop();
@@ -18,29 +20,6 @@ function addShow() {
     }
   });
 }
-
-// function showStore(e) {
-//   // const storeHandle = $('.js-storeshow')
-//   // console.log(storeHandle);
-//   // this.on('click')
-//   $('.js-storeshow').on('click',function(){
-//     this.target.toggleClass('is-show')
-//     this.target.next('dd').toggleClass('is-show')
-//   });
-//   // $('.js-storeshow').click(function(){
-//   //   console.log(this);
-//   //   // const storeHandle = this;
-//   //   this.toggleClass('is-show')
-//   //   storeHandle.next('dd').toggleClass('is-show')
-//   // });
-//   // storeHandle.each(function(index, el) {
-//   //   el.addEventListener("click", function() {
-//   //     storeHandle.toggleClass('is-show')
-//   //     storeHandle.next('dd').toggleClass('is-show')
-//   //   })
-//   // })
-// }
-
 
 let nowPositionY = 0;
 $(window).on('scroll', function() {
@@ -61,7 +40,7 @@ $(window).on('scroll', function() {
 
     console.log(nowPositionY)
     $('#js-nav').addClass('is-hide')
-    if (nowPositionY > 21500) {
+    if (nowPositionY > thanksposi) {
       $('#js-scroll').addClass('is-hide')
     }
     // console.log('down', nowPositionY);
@@ -86,3 +65,26 @@ document.addEventListener("DOMContentLoaded", function() {
   //   $('.l-bgm').removeClass('is-hide')
   // }
 }, false);
+
+
+// function showStore(e) {
+//   // const storeHandle = $('.js-storeshow')
+//   // console.log(storeHandle);
+//   // this.on('click')
+//   $('.js-storeshow').on('click',function(){
+//     this.target.toggleClass('is-show')
+//     this.target.next('dd').toggleClass('is-show')
+//   });
+//   // $('.js-storeshow').click(function(){
+//   //   console.log(this);
+//   //   // const storeHandle = this;
+//   //   this.toggleClass('is-show')
+//   //   storeHandle.next('dd').toggleClass('is-show')
+//   // });
+//   // storeHandle.each(function(index, el) {
+//   //   el.addEventListener("click", function() {
+//   //     storeHandle.toggleClass('is-show')
+//   //     storeHandle.next('dd').toggleClass('is-show')
+//   //   })
+//   // })
+// }
