@@ -315,6 +315,11 @@ button:focus {
   -ms-flex-direction: column;
   flex-direction: column;
   font-size: 110%;
+  height: auto;
+}
+
+.wedding .message img {
+  margin-bottom: 30px;
 }
 
 .wedding .message_ttl {
