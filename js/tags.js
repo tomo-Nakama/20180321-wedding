@@ -30,11 +30,14 @@ $(window).on('scroll', function() {
   if (diffPositionY > 0) {
     console.log('up', nowPositionY);
     if (nowPositionY > 667) {
+      $('#js-scroll').removeClass('is-hide')
       $('#js-nav').removeClass('is-hide')
     } else if (0 < nowPositionY < 667) {
       $('#js-nav').addClass('is-hide')
+    } else if (nowPositionY < (thanksposi - 500)) {
+      $('#js-scroll').removeClass('is-hide')
+      $('#js-nav').removeClass('is-hide')
     }
-    $('#js-scroll').removeClass('is-hide')
 
   } else {
 
