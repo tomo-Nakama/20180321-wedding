@@ -326,9 +326,13 @@ button:focus {
   transition: all 2s;
   -webkit-transform: translate3d(0, 30px, 0);
   transform: translate3d(0, 30px, 0);
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
 }
 
 .wedding .message img.js-show {
+  -webkit-filter: blur(0);
+  filter: blur(0);
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -1103,9 +1107,13 @@ button:focus {
   -webkit-transform: translate3d(0, 30px, 0);
   transform: translate3d(0, 30px, 0);
   margin-bottom: 100px;
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
 }
 
 .wedding .l-thanks img.js-show {
+  -webkit-filter: blur(0);
+  filter: blur(0);
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
