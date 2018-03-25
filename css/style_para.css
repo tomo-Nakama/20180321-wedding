@@ -320,6 +320,18 @@ button:focus {
 
 .wedding .message img {
   margin-bottom: 30px;
+  opacity: 0;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+  -webkit-transform: translate3d(0, 30px, 0);
+  transform: translate3d(0, 30px, 0);
+}
+
+.wedding .message img.js-show {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .wedding .message_ttl {
@@ -1045,6 +1057,18 @@ button:focus {
   background-color: #efefef54;
   padding: 10px;
   width: 100%;
+  -webkit-transform: translate3d(0, 30px, 0);
+  transform: translate3d(0, 30px, 0);
+  opacity: 0;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+}
+
+.wedding .l-bgm_elem p.js-show {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .wedding .l-thanks {
@@ -1056,7 +1080,35 @@ button:focus {
 .wedding .l-thanks_cnt {
   line-height: 2.4;
   font-size: 13px;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
+  opacity: 0;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+  -webkit-transform: translate3d(0, 30px, 0);
+  transform: translate3d(0, 30px, 0);
+}
+
+.wedding .l-thanks_cnt.js-show {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.wedding .l-thanks img {
+  opacity: 0;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+  -webkit-transform: translate3d(0, 30px, 0);
+  transform: translate3d(0, 30px, 0);
+  margin-bottom: 100px;
+}
+
+.wedding .l-thanks img.js-show {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .wedding .l-nav {
